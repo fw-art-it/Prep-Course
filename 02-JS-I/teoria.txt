@@ -1,0 +1,43 @@
+Variables
+En javascript se pueden definir Variables de tres formas diferentes
+
+var nombre
+let nombre
+const nombre
+
+Una variable es un espacio de memoria donde se guarda información
+que puede ser un número, un texto (string) o puede ser una variable
+booleana que puede tomar valores de verdadero o falso (true or false)
+
+
+Un string es una concatenación de caracteres 
+(letras, símbolos, espacios y/o números) que por lo general cuando 
+se definen aparecen entre comillas
+
+
+Una Función es un conjunto de instrucciones que podemos invocar
+(llamar) en cualquier momento del código. Una función es un objeto 
+invocable (callable object).
+
+Una función puede recibir (o no) alguna información que le enviemos
+y devolvernos algo
+
+La forma más simple de definir una función es:
+
+funcion nombreFuncion() {}
+
+dentro de los paréntesis podemos definir los argumentos que le 
+enviamos a la función. Una función puede o no tener argumentos.
+
+dentro de los {} va el código que define lo que hace la función
+
+la función nos devuelve un resultado mediante el comando return
+
+return es una declaración
+
+
+Existen controles de flujo y operadores de comparación que utilizamos
+para realizar una comparación y ve si esta es verdadera o falsa y 
+en función de eso realizar algo. Para ello utilizamos la palabra
+clave if
+
