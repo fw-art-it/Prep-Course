@@ -1,0 +1,41 @@
+for es un bucle, esto quiere decir que puede ejecutar 
+líneas de código repetidas veces dependiendo de una condición,
+cuando esta condición se cumple el bucle deja de repetir lo que
+está haciendo.
+
+el bucle for tiene una sintaxis como la siguiente:
+
+for (declaración de la variable; condición; incremento de la variable) {}
+
+la declaración de la variable hace referencia a la variable sobre 
+la que se repetirá el bucle. x ej: i == 0
+
+condición: mientras la condición se cumpla (true) el bucle se repetirá, 
+cuando la condición sea false el bucle se interrumpe
+
+incremento de la variable: es la forma en que evoluciona la variable
+hasta que hace que la condición sea false. x ej: si utilizamos
+el operador ++, el incremento se puede escribir como i++, lo que es
+igual a escribir i = i + 1
+
+cada uno de las declaraciones del for van separadas por ;
+
+
+Operadores lógicos
+
+&&, || y ! son operadores lógicos y se utilizan para realizar
+operaciones entre variables booleanas
+
+&& se interpreta como AND o y
+|| se interpreta como OR o O 
+! se interpreta como NOT
+
+TABLA LÓGICA
+
+p       q       p&&q    p||q    !p      !q 
+true    true    true    true    false   false
+true    false   false   true    false   true
+false   true    false   true    true    false
+false   false   false   false   true    true
+
+
