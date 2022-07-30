@@ -1,0 +1,83 @@
+Un array es un listado de elementos.
+Estos elementos pueden ser de cualquier tipo, por ejemplo:
+- string
+- número
+- booleano
+- función
+- array, etc.
+
+Un array se define de la siguiente forma:
+
+nombreArray[]
+
+Ejemplo de un array:
+
+arrayEj[1, 2, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true]
+        0  1  2     3        4                  5                                   6
+
+
+los elementos del array van separados por comas y están numerados a partir del 0
+
+
+podemos obtener la cantidad de elementos del arrar mediante el método
+.length
+
+ej: arrayEj.length nos devolvería 7
+
+para invocar un elemento del array utilizo su posición:
+
+ej. arrayEj[3] devuelve hola
+
+
+puedo asignar valores al array de diferentes formas
+
+- directamente cuando defino el array
+
+arrayEj[1, 2, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true]
+
+- asignándole un valor a una posición
+
+arrayEj[1] = 5
+
+arrayEj[1, 5, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true]
+
+- mediante la función push() inserta un valor al final
+
+arrayEj.push('pepe')
+
+arrayEj[1, 5, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true, 'pepe']
+
+- mediante la función unshift() agrega un valor al principio
+
+arrayEj.unshift(null)
+
+arrayEj[null, 1, 5, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true, 'pepe']
+
+
+puedo invocar y eliminar valores de un array mediante las funciones
+pop() y shift()
+
+pop() trae el último elemento de un array y lo saca del array
+
+shift() trae el primer elemento de un array y lo saca del array
+
+ej.
+
+arrayEj.pop()
+trae pepe
+y el array queda así:
+arrayEj[null, 1, 5, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true]
+
+arrayEj.shift()
+trae null
+y el array queda así:
+arrayEj[1, 5, 3, 'hola', arr[a, b, c], console.log('soy el elemento 4 del array), true]
+
+
+puedo recorrer un array utilizando los bucles for y while, para 
+ello es muy util utilizar el método .length para obtener la 
+cantidad de elementos del array
+
+
+
+
