@@ -1,0 +1,28 @@
+Un objeto, en Javascript es una colección de datos relacionados y/o funcionalidades 
+que se denominan propiedades (variables) y métodos (funciones).
+
+Para definir un objeto en Javascript utilizacmo la siguiente sintaxis:
+
+var nombreObjeto = {};
+
+x ejemplo:
+
+var persona = {
+    nombre: ['Fabián', 'Weissbrod'],
+    edad: 56,
+    genero: 'masculino',
+    intereses: ['tecnología', 'fútbol', 'política'],
+    bio: function () {alert(this.nombre[0] + '' + this.nombre[1] +
+     ' tiene ' + this.edad + ' años. Le gusta ' + this.intereses[0] + 
+     ' y ' + this.intereses[1] + '.')},
+    saludo: function() {
+        alert('Hola, Soy '+ this.nombre[0] + '. ')},
+ }
+
+Las propiedades de un objeto son pares llamados clave/valor (key:value)
+La clave es un nombre y el valor puede ser cualquier valor soportado por Javascript
+
+Los métodos de un objeto son funciones declaradas dentro del objeto. 
+Definimos la clave como un nombre y el valor como una función
+
+El bucle for..in nos permite iterar dentro de cada par key:value de nuestro objeto
