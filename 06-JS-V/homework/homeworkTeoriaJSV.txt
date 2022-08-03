@@ -1,0 +1,50 @@
+Objetos:
+Los objetos son un tipo de dato de Javascript. 
+Se utilizan para guardar una lista de datos definidos.
+Estos datos pueden ser del tipo "propiedades" o "métodos"
+Las propiedades puede ser una variable de Javascript y los métodos son funciones.
+
+Clases:
+Las clases con unas funciones especiales que se pueden utilizar para crear objetos que 
+comparten propiedades y métodos entre sí.
+
+x ejemplo:
+si  juan = {nombre: 'Juan', apellido: 'Perez', function saluda() {return 'Hola ' + juan.nombre + '!.'}} y
+    tomas = {nombre: 'Tomás', apellido: 'Lopez', function saluda() {return 'Hola ' + tomas.nombre + '!.'}}
+son 2 objetos creados de forma "literal",
+
+yo puedo declarar una clase Persona que me sirva para crear de forma menos repetitiva los objetos
+
+x ejemplo:
+
+function Persona (nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    }
+}
+
+con esto podemos crear los objetos de la siguiente forma:
+
+var juan = new Persona('Juan', 'Perez');
+var tomas = new Persona('Tomás', 'López');
+
+Prototype
+
+Para crear métodos en una clase éstas tienen una forma de establecer los métodos una única vez y dar acceso
+a cada objeto de esa clase a esos métodos creados una única vez.
+Esta propiedad de las clases de llama 'prototype'
+
+x ejemplo,
+
+function Persona (nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    }
+}
+
+Persona.prototype.saludar = function () {
+    return 'Hola ' + this.nombre + '!.';
+}
+
+var juan = Persona('Juan', 'Perez');
+console.log(juan.saludar()); // Hola Juan!.
