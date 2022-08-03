@@ -34,7 +34,7 @@ Para crear métodos en una clase éstas tienen una forma de establecer los méto
 a cada objeto de esa clase a esos métodos creados una única vez.
 Esta propiedad de las clases de llama 'prototype'
 
-x ejemplo,
+x ejemplo, 
 
 function Persona (nombre, apellido) {
     this.nombre = nombre;
