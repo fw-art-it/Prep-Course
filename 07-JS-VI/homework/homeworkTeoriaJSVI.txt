@@ -1,0 +1,22 @@
+Funciones Callback
+
+Una funcionalidad muy utilizaca de Javascript es la capacidad de llamar funciones desde otras funciones, 
+o sea, que podemos pasar una función como argumento de otra a la que podemos pasar argumentos.
+
+Esta propiedad se llama Callback.
+
+Ejemplo
+
+function holaUsuario(usuario) {
+    console.log('Hola ' + usuario)
+}
+
+function chauUsuario(usurio) {
+    console.log('Chau ' + usuario)
+}
+
+function saludar(usuario, cb) {
+    let nombre = usuario;
+    console.log(cb(nombre));
+}
+
